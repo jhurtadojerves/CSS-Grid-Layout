@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;  
+}
+
+.container {
+  display: grid;
+  grid-template: 300px 100px 100px / 50% 200px 100px;
+}
+
+.item {
+  background: lightblue;
+  border: 1px solid red;
+  padding: 10px;
+
+}
+
+.item:nth-of-type(4){
+  background: blue;
+  overflow: auto;
+  /*display: inline-grid; aun no disponible*/
+  /*display: subgrid; aun no disponible*/
+  display: grid;
+  grid-template: 50px 50px 50px / 200px 200px 200px;
+}
+
+.item .item {
+  background: yellow;
+}
